@@ -1,0 +1,30 @@
+:root {
+    --btn-background: rgb(131, 58, 180);
+    --btngradint-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --border: 1px solid #000;
+    --trasperant: #ffffff00;
+}
+
+
+
+.m-btn{
+    display: none;
+    margin-left: 280px;
+    background: var(--btn-background);
+    border: none;
+    border: 1px solid rgb(131, 58, 180);
+    color: #fff;
+    
+    
+}
+.canvas {
+    width:200px;
+}
+
+ @media only screen and (max-width:768px){
+    .m-btn{
+        display: flex;
+       
+       
+    }
+ }

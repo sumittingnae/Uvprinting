@@ -9,6 +9,8 @@
 
 header{
 background-color:var(--trasperant);
+z-index: 1;
+position: absolute;
 .container
         .wrapper{
             .row{
@@ -32,7 +34,7 @@ background-color:var(--trasperant);
                         #menu{
                             margin-left: 30px;
                             text-decoration: none;
-                            color: #000;
+                            color: #a5a5a5;
                             font-weight: 500;
                             font-size: 20px;
                             width: 200px;
@@ -41,8 +43,9 @@ background-color:var(--trasperant);
                            #menu:hover{
                          
                           
-                          color: var(--btn-background);
+                          color: #423636;
                           border-radius: 20px;
+                          
 
                         }
                                 .dropbtn {
@@ -51,17 +54,19 @@ background-color:var(--trasperant);
                                         //border: var(--border);
                                         font-weight: 500;
                                         font-size: 20px;
+                                        color: #a5a5a5;
                                     }
 
                       .dropbtn:hover{
                          
                           
-                          color: var(--btn-background);
+                          color: #423636;
                           border-radius: 20px;
 
                         }
 
                     }
+
                     .btn{
                     background:var(--btn-background);
                     background: var(--btngradint-background);
@@ -75,3 +80,85 @@ background-color:var(--trasperant);
             }
         }
     }
+@media screen and (max-width:768px){
+    header {
+           //border: var(--border);
+            position: absolute;
+            width: 100%;
+            .container {
+                .wrapper {
+                .row {
+                 .main {
+                       flex-direction: column;
+    
+                        .logo {
+                            width: 50px;
+                            position: absolute;
+    
+                            img {
+                                width: 100%;
+    
+                            }
+    
+                        }
+    
+                        .menu {
+                            //border: 1px solid #000; 
+                            width: 600px;
+                            padding: 10px 15px;
+                            margin-left: 200px;
+                            display: none;
+    
+                            #menu {
+                                margin-left: 30px;
+                                text-decoration: none;
+                                color: #000;
+                                font-weight: 500;
+                                font-size: 20px;
+                                width: 200px;
+                                display: none;
+    
+                            }
+    
+                            #menu:hover {
+    
+    
+                                color: var(--btn-background);
+                                border-radius: 20px;
+    
+                            }
+    
+                            .dropbtn {
+                                margin-left: 30px;
+                                width: 150px;
+                                //border: var(--border);
+                                font-weight: 500;
+                                font-size: 20px;
+                            }
+    
+                            .dropbtn:hover {
+    
+    
+                                color: var(--btn-background);
+                                border-radius: 20px;
+    
+                            }
+    
+                        }
+    
+                        .btn {
+                            background: var(--btn-background);
+                            background: var(--btngradint-background);
+                            color: #fff;
+                            font-weight: 500;
+                            margin-left: 200px;
+                            box-shadow: 12px 6px 11px rgba(131, 58, 180, 1);
+                            border: none;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+}
+}

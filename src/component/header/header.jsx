@@ -2,6 +2,7 @@ import React from "react";
 import "./header.scss"; // Correct the import statement
 import { Link } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
+import Offcanvas from "./offcanvas";
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
                       <Link to="/" id="menu">
                         Home
                       </Link>
-                      <Link to="/" id="menu">
+                      <Link to="/shop" id="menu">
                         Shop
                       </Link>
 
@@ -40,17 +41,19 @@ const Header = () => {
                         </NavDropdown.Item>
                       </NavDropdown>
 
-                      <Link to="/" id="menu">
+                      <Link to="/Blog" id="menu">
                         Blog
                       </Link>
-                      <Link to="/" id="menu">
+                      <Link to="/About" id="menu">
                         About
                       </Link>
-                      <Link to="/" id="menu">
+                      <Link to="/Contact" id="menu">
                         Contact
                       </Link>
                     </div>
-                    <button className="btn"> Get Quote</button>
+                    <button className="btn">Get Quote</button>
+
+                    <Offcanvas/>
                   </div>
                 </div>
               </div>
