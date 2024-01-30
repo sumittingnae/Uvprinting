@@ -5,37 +5,29 @@ const offcanvas=()=>{
 
     return (
       <>
-        
+        {/* <div className="dropdowns">
           <button
-            className="btn btn-primary"
+            className="btn btn-secondary dropdown-toggle"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-            className='m-btn'
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
           >
-            Menu
+            Dropdown button
           </button>
-
-          <div
-            className="offcanvas offcanvas-end canvas"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-
-          >
-            <div className="offcanvas-header ">
-              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-              <button
-                type="button"
-                className="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="offcanvas-body">Hello</div>
+          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="#">
+              Action
+            </a>
+            <a className="dropdown-item" href="#">
+              Another action
+            </a>
+            <a className="dropdown-item" href="#">
+              Something else here
+            </a>
           </div>
-       
+        </div> */}
       </>
     );
 

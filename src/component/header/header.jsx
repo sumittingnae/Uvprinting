@@ -1,68 +1,113 @@
 import React from "react";
-import "./header.scss"; // Correct the import statement
-import { Link } from "react-router-dom";
-import { NavDropdown } from "react-bootstrap";
-import Offcanvas from "./offcanvas";
+import "./header.scss"; // Corrected the import statement
+import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
     <>
-      <header>
+      <div className="header">
         <div className="container">
           <div className="wrapper">
-            <div className="row">
-              <div className="col-6 col-12">
-                <div className="col-lg-6 w-100">
-                  <div className="main">
-                    <div className="logo">
-                      <img src="./template/logo.png" alt="logo" />
+            <div className="row col-6 col-12">
+              <div className="col-lg-6 w-100">
+                <div className="headers">
+                  <div className="logo">
+                    <img src="./template/logo.png" />
+                  </div>
+
+                  <div className="menu">
+                    <Link to="/" className="menu-link">
+                      Home
+                    </Link>
+                    <Link to="/shop" className="menu-link">
+                      Shop
+                    </Link>
+
+                    <Link to="/Blog" className="menu-link">
+                      Blog
+                    </Link>
+                    <Link to="/contact" className="menu-link">
+                      Contact
+                    </Link>
+                    <Link className="menu-link">
+                      <div class="dropdown">
+                        <button
+                          class="btn"
+                          type="link"
+                          id="navbarDarkDropdownMenuLink"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Service<i className="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <Link class="dropdown-item" to="">
+                              Action
+                            </Link>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Another action
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Something else here
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="btns">
+                    <button className="btn">Get Quto</button>
+                  </div>
+
+                  <div className="side-menu">
+                    <div class="dropdown">
+                      <button
+                        class="btn"
+                        type="link"
+                        id="navbarDarkDropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Menu
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <Link class="dropdown-item" to="">
+                            Action
+                          </Link>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            Another action
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            Something else here
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                    <div className="menu">
-                      <Link to="/" id="menu">
-                        Home
-                      </Link>
-                      <Link to="/shop" id="menu">
-                        Shop
-                      </Link>
-
-                      <NavDropdown title="Service" id="basic-nav-dropdown" className="dropbtn">
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
-
-                      <Link to="/Blog" id="menu">
-                        Blog
-                      </Link>
-                      <Link to="/About" id="menu">
-                        About
-                      </Link>
-                      <Link to="/Contact" id="menu">
-                        Contact
-                      </Link>
-                    </div>
-                    <button className="btn">Get Quote</button>
-
-                    <Offcanvas/>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </>
   );
 };
 
-export default Header; // Correct the component name to start with a capital letter
+export default Header; // Corrected the component name to start with a capital letter

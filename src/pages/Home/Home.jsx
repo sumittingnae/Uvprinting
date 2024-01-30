@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.scss";
 import Header from "../../component/header/header";
 import Offcanvas from "../../component/header/offcanvas";
+import { Link } from "react-router-dom";
+import Footer from '../../component/footer/footer'
 
 const Home = () => {
   return (
@@ -54,8 +56,88 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div>
-                    aaa
+                  <div className="p-display">
+                    <div className="p-card">
+                      <div className="card" >
+                        <div className="img">
+                          <img
+                            src="./template/coffee-mug.png"
+                            className="card-img-top"
+                            alt=""
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h5 className="card-title">Coffee Mug</h5>
+                          <p className="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nunc sodales pharetra nisl ut semper.
+                          </p>
+                          <Link to="">
+                            <button className="btn">Details</button>
+                          </Link>
+                        </div>
+                      </div>
+
+                      <div className="card" >
+                        <div className="img">
+                          <img
+                            src="./template/visiting card (2).png"
+                            className="card-img-top"
+                            alt=""
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h5 className="card-title">Visiting Card</h5>
+                          <p className="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nunc sodales pharetra nisl ut semper.
+                          </p>
+                          <Link to="">
+                            <button className="btn">Details</button>
+                          </Link>
+                        </div>
+                      </div>
+
+                      <div className="card" >
+                        <div className="img">
+                          <img
+                            src="./template/t-shirt.png"
+                            className="card-img-top"
+                            alt=""
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h5 className="card-title">T-Shirt</h5>
+                          <p className="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nunc sodales pharetra nisl ut semper.
+                          </p>
+                          <Link to="">
+                            <button className="btn">Details</button>
+                          </Link>
+                        </div>
+                      </div>
+
+                      <div className="card" >
+                        <div className="img">
+                          <img
+                            src="./template/broucher.png"
+                            className="card-img-top"
+                            alt=""
+                          />
+                        </div>
+                        <div className="card-body">
+                          <h5 className="card-title">Broucher</h5>
+                          <p className="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nunc sodales pharetra nisl ut semper.
+                          </p>
+                          <Link to="">
+                            <button className="btn">Details</button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -63,6 +145,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
