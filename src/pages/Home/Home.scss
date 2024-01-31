@@ -5,11 +5,11 @@
     --trasperant: #ffffff00;
 }
 .home{
-    margin-top: 0px;
+    //margin-top: 0px;
   
     img{
-    z-index: -1;
-    position: absolute;
+    //z-index: -1;
+   
     }
     .container{
         .wrapper{
@@ -21,11 +21,9 @@
 }
 
 .products {
-    position: absolute;
-    bottom: 0px;
-    top: 950px;
+   
     width: 100%;
-    height: 30vh;
+    //height: 30vh;
     //border: var(--border);
     padding: 25px 0px;
     margin-bottom: 30px;
@@ -93,8 +91,8 @@
         margin-top: 0px;
 
         img {
-            z-index: -1;
-            position: absolute;
+           
+           
         }
 
         .container {
@@ -105,7 +103,7 @@
     }
 
     .products {
-        position: absolute;
+      
         margin-bottom: 20px;
         top: 280px;
         width: 100%;
