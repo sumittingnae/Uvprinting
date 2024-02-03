@@ -1,0 +1,151 @@
+:root {
+    --btn-background: rgb(131, 58, 180);
+    --btngradint-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --border: 1px solid #000;
+    --trasperant: #ffffff00;
+}
+.contact{
+.container{
+    .wrapper{
+        .row{
+            .contents{
+                display: flex;
+                margin-top: 200px;
+                //border: var(--border);
+                padding: 15px 50px;
+                .left-side{
+                    p{
+                        font-size:20px;
+                        color: var(--btn-background);
+                        font-weight:600 ;
+                        width: 500px;
+                    }
+
+                    h6{
+                      font-size: 35px;  
+                      font-weight: bold;
+                      text-shadow: 11px 3px 11px var(--btn-background);
+                    }
+                    i{
+                                margin-right: 10px;
+                                font-size: 20px;
+                                //border: 1px solid #fff;
+                                color: #fff;
+                                padding: 12px 13px; 
+                                border-radius: 30px;
+                                .fb {
+                                        padding: 15px 15px;
+                                    }
+                            }
+                            .fb{
+                                padding: 12px 16px;
+                            }
+                }
+            }
+                        .right-side {
+                            margin-left: 100px ;
+                            //border: var(--border);
+                            width: 100%;
+                            padding: 15px 20px;
+                            border-radius: 20px;
+                            h6 {
+                                font-size: 30px;
+                                font-weight: bold;
+            
+                            }
+                            form{
+                                .form-group{
+                                    display:flex ;
+                                    margin-top: 15px;
+                                    label{
+                                        margin-top: 8px;
+                                    }
+                                    input{
+                                        width: 400px;
+                                        margin-left: 10px;
+                                    }
+                                    textarea{
+                                        width: 400px;
+                                        margin-left: 10px;
+                                        resize: none;
+                                    }
+                                }
+                            }
+                            .btn{
+                                background: var(--btn-background);
+                                color: #fff;
+                                margin-top:15px ;
+                                width: 90%;
+                            }
+                        }
+        }
+    }
+}
+}
+@media screen and (max-width:768px){
+    .contact{
+        .container{
+            .wrapper{
+                .row{
+                    .contents{
+                        margin-top: 100px;
+                        display: block;
+                        padding: 15px 20px;
+                        .left-side{
+                            width: 300px;
+                            p {
+                                    font-size: 20px;
+                                    color: var(--btn-background);
+                                    font-weight: 600;
+                                    width: 100%;
+                                }
+                            
+                                h6 {
+                                    font-size: 30px;
+
+                                }
+                        }
+                        .right-side{
+                            margin-left: 0px;
+                            //border: var(--border);
+                            width: 100%;
+                            margin-top: 50px;
+                           box-shadow: 5px 10px 11px #d4d3d3;
+                            padding: 15px 20px;
+                            
+                                h6 {
+                                    font-size: 30px;
+                                    font-weight: bold;
+                            
+                                }
+                            
+                                form {
+                                    .form-group {
+                                        display: flex;
+                                        margin-top: 15px;
+                            
+                                        label {
+                                            margin-top: 8px;
+                                        }
+                            
+                                        input {
+                                            width: 400px;
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            
+                                .btn {
+                                    background: var(--btn-background);
+                                    color: #fff;
+                                    margin-top: 15px;
+                                    width: 87%;
+                                }
+                            }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
