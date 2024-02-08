@@ -1,0 +1,47 @@
+:root {
+    --btn-background: rgb(131, 58, 180);
+    --btngradient-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --border: 1px solid #000;
+    --transparent: #ffffff00;
+}
+.product{
+    width:1000px;
+    height: 80vh;
+    //border: var(--border);
+    font-family: 'Quicksand', sans-serif;
+    .container{
+        //border: var(--border);
+        width: 100%;
+        .wrapper{
+            .row{
+                width: 1000px;
+                height: 80vh;
+                //border: var(--border);
+                form{
+                    .form-group{
+                        display: flex;
+                        padding: 10px 10px;
+                        label{
+                            margin-top: 20px;
+                            font-size: 20px;
+
+                        }
+                        .form-control{
+
+                            margin-left: 20px ;
+                            width: 300px;
+                            padding:5px 10px;
+                            // border-radius: 10px;
+                            border:var(--border);
+                           
+
+                            }
+                        //  #inputDes {
+                        //     height: 200px;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}

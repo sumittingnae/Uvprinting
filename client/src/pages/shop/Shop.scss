@@ -1,0 +1,208 @@
+
+:root {
+    --btn-background: rgb(131, 58, 180);
+    --btngradient-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --border: 1px solid #000;
+    --transparent: #ffffff00;
+}
+
+
+
+
+
+.shop{
+    //border: var(--border);
+    margin-bottom: 200px;
+   
+    z-index: -1;
+   
+    .container{
+        .wrapper{
+            .row{
+               
+                //height: 200vh;
+                .Shops{
+                    h6{
+                        font-size: 50px;
+                    }
+                .left-side{
+                        margin-top: 100px;
+                        //border: 1px solid #000;
+                        //width: 1100px;
+                        padding: 10px;
+                        height: 100vh;
+                        
+
+                        .title{
+                            display: flex;
+                        .cat {
+                               display: flex; 
+                        
+                                #cat {
+                                    margin-left: 600px;
+                                    height: 30px;
+                                    margin-top: 5px;
+                                }
+                        
+                                .grid-line {
+                                    .btn {
+                                        margin-left: 20px;
+                                        //border: var(--border);
+                                        margin-top: 5px;
+                                    }
+                                }
+                            }
+
+                        }
+                        .p-details{
+                            margin-top: 20px;
+                            height: 100vh;
+                            overflow-y
+                            
+                            
+                            
+                            
+                            
+                            
+                            : scroll;
+                            //border: var(--border);
+                            
+                            
+                            .cards{
+                                display: flex;
+                                flex-wrap: wrap;
+                                height: 300px;
+
+                                
+                              
+                                .card{
+                                    width: 18rem;
+                                    margin-left: 30px;
+                                    margin-top: 20px;
+                                    img{
+                                        height: 250px;
+                                        padding: 10px 10px;
+                                    }
+                                    .btn{
+                                        //border: var(--border);
+                                        background: var(--btn-background);
+                                        color: #fff;
+
+                                    }
+                                    .btn:hover{
+                                        background-color: #fff;
+                                        border: var(--border);
+                                        color: var(--btn-background);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:991px){
+    .shop {
+            //border: var(--border);
+            margin-bottom: 200px;
+    
+          
+    
+            .container {
+                .wrapper {
+                    .row {
+    
+                        //height: 200vh;
+                        .Shops {
+                            h6 {
+                                font-size: 50px;
+                            }
+    
+                            .left-side {
+                                margin-top: 100px;
+                                //border: 1px solid #000;
+                                //width: 1100px;
+                                padding: 10px;
+                                height: 100vh;
+    
+    
+                                .title {
+                                    display: block;
+                                    width: 100%;
+                                    //border: var(--border);
+                                    p{
+                                        font-size: 15px;
+                                        width: 100%;
+                                    }
+    
+                                   .cat{
+                                    display: flex;
+
+                                    #cat {
+                                            margin-left: 0px;
+                                            height: 30px;
+                                            margin-top: 5px;
+                                        }
+                                    
+                                        .grid-line {
+                                            .btn {
+                                                margin-left: 20px;
+                                                //border: var(--border);
+                                                margin-top: 5px;
+                                            }
+                                        }
+                                   }
+                                }
+    
+                                .p-details {
+                                    margin-top: 20px;
+                                    height: 100vh;
+                                    overflow-y: scroll;
+                                    //border: var(--border);
+    
+    
+                                    .cards {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        height: 300px;
+    
+    
+    
+                                        .card {
+                                            width: 18rem;
+                                            margin-left: 30px;
+                                            margin-top: 20px;
+    
+                                            img {
+                                                height: 250px;
+                                                padding: 10px 10px;
+                                            }
+    
+                                            .btn {
+                                                //border: var(--border);
+                                                background: var(--btn-background);
+                                                color: #fff;
+    
+                                            }
+    
+                                            .btn:hover {
+                                                background-color: #fff;
+                                                border: var(--border);
+                                                color: var(--btn-background);
+                                            }
+                                        }
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+}

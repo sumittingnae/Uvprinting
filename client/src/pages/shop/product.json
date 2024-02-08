@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "broucher",
+    "img": "./template/broucher.png",
+    "category":"brocher"
+  },
+  {
+    "id": 2,
+    "name": "Tshirt",
+    "img": "./template/t-shirt.png",
+    "category":"tshirt"
+   
+  },
+  {
+    "id": 3,
+    "name": "coffee mug",
+    "img": "./template/Coffee-mug.png",
+    "category":"mug"
+
+
+  },
+  {
+    "id": 4,
+    "name": "Visiting Card",
+    "img": "./template/visiting card.png",
+    "category":"V-card"
+
+
+  }
+  
+]

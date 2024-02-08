@@ -1,0 +1,48 @@
+:root {
+    --btn-background: rgb(131, 58, 180);
+    --btngradient-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --border: 1px solid #000;
+    --transparent: #ffffff00;
+}
+
+.message {
+    border: var(--border);
+    width: 100%;
+
+    .container {
+        .wrapper {
+            .row {
+                .table {
+                    width: 100%;
+
+                    thead {
+                        tr {
+                            th {
+                                width: 200px;
+                            }
+                        }
+                    }
+
+                    tbody {
+
+                        tr {
+                            td {
+                                width: 20%;
+                                background-color: #7a7a7a;
+                                color: #fff;
+                            }
+
+                            #td {
+                                width: 20%;
+                                background-color: #7a7a7a;
+                                border: var(--border);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
