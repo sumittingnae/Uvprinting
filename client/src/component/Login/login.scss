@@ -1,0 +1,92 @@
+:root {
+    --btn-background: rgb(131, 58, 180);
+    --btngradint-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    --border: 1px solid #000;
+    --trasperant: #ffffff00;
+}
+
+.login{
+    width: 100%;
+    border: var(--border);
+    background: var(--btngradint-background);
+    height: 100vh;
+    .container{
+        .wrapper{
+            .Login{
+               
+                margin-top: 80px;
+                width:100%;
+
+                color:#fff;
+                padding: 20px 35px;
+                
+                h6{
+                    font-size: 50px;
+                }
+                form{
+                    width: 500px;
+                    .form-group{
+                        margin-top: 20px;
+                        label{
+                            font-size: 20px;
+                        }
+                        input{
+                                width: 100%;
+
+                        }
+                       
+                    }
+                     button{
+                            margin-top: 10px;
+                            background-color: var(--btn-background);
+                            color: #fff;
+                            border: 1px solid #fff;
+                            margin-right: 20px;
+                        }
+                }
+               
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+.login {
+        width: 100%;
+        border: var(--border);
+
+        .container {
+            .wrapper {
+                .Login {
+                    margin-top: 80px;
+
+                    width:100% h6 {
+                        font-size: 50px;
+                    }
+
+                    form {
+                        width: 100%;
+
+                        .form-group {
+                            margin-top: 20px;
+
+                            label {
+                                font-size: 20px;
+                            }
+
+                            input {
+                                width: 100%;
+
+                            }
+
+                        }
+
+                        button {
+                            margin-top: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

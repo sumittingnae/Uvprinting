@@ -12,7 +12,7 @@ const Header = () => {
               <div className="col-lg-6 w-100">
                 <div className="headers">
                   <div className="logo">
-                    <img src="./template/logo.png" />
+                    <img src="./template/logo-2.png" />
                   </div>
 
                   <div className="menu">
@@ -66,6 +66,7 @@ const Header = () => {
                   <div className="btns">
                     <button className="btn">Get Quto</button>
                   </div>
+                 <Link to="/login" id="login">Login</Link>
 
                   <div className="side-menu">
                     <div class="dropdown">

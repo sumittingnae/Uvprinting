@@ -36,3 +36,10 @@ Route::post('/products', [ProductController::class, 'stores']);
 // use App\Http\Controllers\ProductControllers;
 
 Route::get('/products', [ProductControllers::class, 'index']);
+
+
+Route::get('/api/assets/{filename}', function ($filename) {
+    $path = public_path($filename);
+    return response()->file($path);
+})->where('filename', '.*');
+
